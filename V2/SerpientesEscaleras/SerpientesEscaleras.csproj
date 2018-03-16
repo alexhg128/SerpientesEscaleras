@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{568ED7CF-3F4F-4E74-A9FE-576EF727DF5B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp2</RootNamespace>
-    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <RootNamespace>SerpientesEscaleras</RootNamespace>
+    <AssemblyName>SerpientesEscaleras</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,6 +51,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Graphic\GDice.cs" />
+    <Compile Include="Logic\Casilla.cs" />
+    <Compile Include="Logic\Dado.cs" />
+    <Compile Include="Logic\Program.cs" />
+    <Compile Include="Logic\Tablero.cs" />
+    <Compile Include="Logic\Token.cs" />
+    <Compile Include="Logic\Turno.cs" />
+    <Compile Include="PlayerListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -64,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,5 +89,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
