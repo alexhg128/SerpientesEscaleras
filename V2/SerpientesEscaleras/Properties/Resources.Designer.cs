@@ -59,5 +59,15 @@ namespace SerpientesEscaleras.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Scrabbles {
+            get {
+                object obj = ResourceManager.GetObject("Scrabbles", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

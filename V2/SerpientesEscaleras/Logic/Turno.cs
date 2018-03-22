@@ -21,13 +21,15 @@ namespace SerpientesEscaleras.Logic
         }
 
         internal Token Ganador { get => ganador; set => ganador = value; }
+        internal Queue<Token> Fila { get => fila; set => fila = value; }
+        internal Tablero Tablero { get => tablero; set => tablero = value; }
 
         public void addPlayer(Token player) 
         {//Agrega un jugador a la fila de jugadores
             fila.Enqueue(player);
         }
 
-        public void siguienteTurno()
+        public virtual void siguienteTurno()
         {
             Token current = fila.Dequeue();//Toma el jugador en turno
             int avance = Dado.getRandom();//Tira el dado

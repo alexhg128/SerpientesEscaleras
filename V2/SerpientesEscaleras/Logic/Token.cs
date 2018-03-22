@@ -19,9 +19,14 @@ namespace SerpientesEscaleras.Logic
 
         public int Posicion { get => posicion; set => posicion = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public void Move(int casilla)
+        public virtual void Move(int casilla)
         {//Mueve al jugador
             posicion = casilla;
+        }
+
+        public override string ToString()
+        {
+            return nombre;
         }
     }
 }
